@@ -1,0 +1,104 @@
+
+		
+@media(min-width: 767px){
+  #exmp1Trigger{ 		display: none;		}
+}
+/*
+		#exmp1Trigger>.menuFrame{
+			left: 0;
+			right: 2px;
+			width: auto !important;			
+		}
+	*/	
+		#exmp1Trigger .menuSlider{
+			width: 240px;
+			
+		}
+				
+			
+#menuExmp1{
+	padding: 0;
+	margin: 1em 0 0.5em 0;
+	float: right;
+	}
+		
+#menuExmp1 li>a{
+	padding: 8px 25px;
+}
+#menuExmp1 li i{
+	margin-right: 8px;
+}
+#exmp1Trigger #menuExmp1 li i{
+	    min-width: 18px;
+	    }
+
+#menuExmp1 li{
+	background: transparent no-repeat right center;
+}
+#menuExmp1 li.hasSubmenu{
+	background-image: url('../images/folded.png');
+}
+#menuExmp1 li.hasSubmenu.displaySubmenu{
+	background-image: url('../images/unfolded.png');
+}
+
+#exmp1NavBar{
+	position: relative;
+}
+
+#Content{
+	min-height: 300px;
+	padding: 20px;
+}
+#spacerTop{
+	min-height: 200px;
+	padding: 20px;
+}
+#Content, #spacerTop{
+	background-color: #96a6c8;
+	color: white;
+	font-family: "Arial";
+	font-size: 14pt;	
+}
+#Footer{
+	background-color: #a3c9ae;
+	padding: 12px;
+}
+
+						
+.flxInitFrame>.flxMenu ul{	
+	background-color: #ff594e;
+}
+				
+.menuSlider{
+	background-color: white;			
+}
+.menuTrigger ul{
+	background-color: rgb(255, 89, 78);
+}		
+			
+#Footer a,
+.menuTrigger>a,
+.flxMenu li>a{
+	color: #fff;
+	text-decoration: none;	
+	font-size: 16px;
+	font-weight: 800;
+	text-transform: uppercase
+}
+
+.menuTrigger>a:hover,
+.flxMenu li>a:hover{
+	color: white;
+    background: #ff594e;
+}
+.menuTrigger>a:focus,
+.flxMenu li>a:focus{
+	color: white;
+	text-decoration: underline;	
+	outline: none;
+}
+#exmp1NavBar, #Footer{
+	background-color:none
+}
+
