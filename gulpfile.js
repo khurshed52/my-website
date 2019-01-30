@@ -46,7 +46,7 @@ gulp.task('pages', function() {
 //Do everything once!
 gulp.task('default', function(){
   gulp.watch('css/*.css', gulp.series('css')),
-  gulp.watch('./*.html', gulp.series('pages')),
+  gulp.watch('./*.html', gulp.series('pages'))
   gulp.watch('js/*.js', gulp.series('script'));
   return
 });
