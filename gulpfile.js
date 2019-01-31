@@ -5,6 +5,8 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
+
 
 const AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -42,6 +44,13 @@ gulp.task('pages', function() {
     }))
     .pipe(gulp.dest('dist'));
 });
+
+// Gulp task to minify images
+gulp.task('imagemin', () =>
+	gulp.src('images/skills/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('dist/images/skills'))
+);
 
 //Do everything once!
 gulp.task('default', function(){
