@@ -14,6 +14,8 @@ mix.styles([
     'css/venobox.css',
 ], 'dist/css/all.css');
 
+
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

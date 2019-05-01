@@ -3,7 +3,7 @@
   var bLazy = new Blazy();
   feather.replace();
   $(".typed").typed({
-    strings: ["UI Developer", "Web Designer", "SharePoint Designer", "UI UX Expert"],
+    strings: ["Front End Developer", "UI Developer", "Web Designer", "SharePoint Designer", "UI UX Expert"],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed
@@ -187,3 +187,4 @@
   });
 
 })(jQuery);
+

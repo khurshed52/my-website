@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact </title>
+    <title>Contact Me </title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link href="css/all.css" rel="stylesheet" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -171,20 +171,20 @@
                 </div>
                 <div class="col-md-9 col-lg-9 col-xl-9 col-sm-6 col-12">
                     <div id="content">
-                        <form method="post" action="send_mail.php">
+                        <form method="post" action="send_mail.php" onsubmit="return validation()">
                             <div class="inline">
                                 <p style="width:45%">
                                     <label for="username" class="icon-user"> Name
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="text" name="first_name" required="required" placeholder="Your Name">
+                                    <input type="text" name="first_name" id="name" placeholder="Your Name">
                                 </p>
 
                                 <p style="width:45%">
                                     <label for="usermail" class="icon-envelope"> E-mail address
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="email" name="email_address" placeholder="Your Email" required="required">
+                                    <input type="text" name="email_address" placeholder="Your Email" id="email">
                                 </p>
                             </div>
 
@@ -197,7 +197,7 @@
                                 <label for="message" class="icon-comment"> Message
                                     <span class="required">*</span>
                                 </label>
-                                <textarea name="comments" placeholder="Your message here" required="required"></textarea>
+                                <textarea name="comments" placeholder="Your message here" id="comments"></textarea>
                             </p>
                             <button type="submit" class="flat-button m10 ripple">
                                  Send </button>
@@ -229,6 +229,7 @@
     <script type="text/javascript" src="js/blazy.min.js"></script>
     <script type="text/javascript" src="js/vivus.min.js"></script>
     <script type="text/javascript" src="js/main.js"> </script>
+    <script type="text/javascript" src="js/validation.js"> </script>
 </body>
 
 </html>

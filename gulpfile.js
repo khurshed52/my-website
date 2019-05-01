@@ -20,12 +20,12 @@ const AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ];
 // Gulp task to minify css files
-gulp.task('css', function() {
-   return gulp.src('css/*.css')
-            .pipe(sass())
-            .pipe(cleanCSS({compatibility: 'ie8'}))
-            .pipe(gulp.dest('dist/css'));
-});
+// gulp.task('css', function() {
+//    return gulp.src('css/*.css')
+//             .pipe(sass())
+//             .pipe(cleanCSS({compatibility: 'ie8'}))
+//             .pipe(gulp.dest('dist/css'));
+// });
 
 // Gulp task to minify js files
 gulp.task('script', function() {
@@ -54,7 +54,7 @@ gulp.task('imagemin', () =>
 
 //Do everything once!
 gulp.task('default', function(){
-  gulp.watch('css/*.css', gulp.series('css')),
+ // gulp.watch('css/*.css', gulp.series('css')),
   gulp.watch('./*.html', gulp.series('pages'))
   gulp.watch('js/*.js', gulp.series('script'));
   return
