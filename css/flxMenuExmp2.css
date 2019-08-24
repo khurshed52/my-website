@@ -24,6 +24,7 @@
 		
 #menuExmp1 li>a{
 	padding: 8px 25px;
+	transition: all 0.5s ease-in-out;
 }
 #menuExmp1 li i{
 	margin-right: 8px;
@@ -90,7 +91,8 @@
 .menuTrigger>a:hover,
 .flxMenu li>a:hover{
 	color: white;
-    background: #ff594e;
+	background: #ff594e;
+	border-radius: 2px;
 }
 .menuTrigger>a:focus,
 .flxMenu li>a:focus{
